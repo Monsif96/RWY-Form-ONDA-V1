@@ -1,23 +1,23 @@
 
 function Pickup() { 
-
+    localStorage.clear();
 // <!--  Form 1............................................................................. -->
     var Id = document.getElementById("idplace").value;
     //var Id = document.getElementById("idplace").required;
     var Idpiste = document.getElementById("idpiste").value;
     var lrc_1 = document.getElementById("1LRC").value;
     var time = document.getElementById("time").value;
-    //console.log(time);
-    var MM = time.slice(5, 7);
-    //console.log(MM);
-    var DD = time.slice(8, 10);
-    //console.log(DD);
-    var HH = time.slice(11, 13);
-    //console.log(HH);
-    var mm = time.slice(14, 16);
-    //console.log(mm);
-    TIME=MM+DD+HH+mm;
-    console.log(TIME);
+        //console.log(time);
+        var MM = time.slice(5, 7);
+        //console.log(MM);
+        var DD = time.slice(8, 10);
+        //console.log(DD);
+        var HH = time.slice(11, 13);
+        //console.log(HH);
+        var mm = time.slice(14, 16);
+        //console.log(mm);
+        TIME=MM+DD+HH+mm;
+        //console.log(TIME);
     
 // <!-- Form 2............................................................................. -->
     var RWYCC1 = document.getElementById("RWYCC1").value;
@@ -149,6 +149,7 @@ function Pickup() {
         }
     //console.log(msg1);
     localStorage.setItem("SEC1", msg1);
+    console.log("Yes",msg1);
     
     // <!-- Second Section  ............................................................................. -->
         msg2="";
@@ -199,17 +200,18 @@ function Pickup() {
         msg3=msg1+'\n'+msg2;
     //console.log(msg3);
     localStorage.setItem("SEC3", msg3);
-
+    document.getElementById("state").href="Message.html";
 
 }
 
 function Result (x) {
     var span = document.getElementById("state");
     span.textContent = x;
-    console.log(x);
+    //console.log(x);
 }
 
 function Pic () {
     document.getElementById("state").href="Message.html";
+    Pickup();
 }
 
