@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <script src="Js/Main.js"></script>
+    <script language="javascript" type="text/javascript" src="eel.js"></script>
     <title>RCR - Login</title>
 
     <!-- Custom fonts for this template-->
@@ -36,6 +37,7 @@
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
@@ -92,10 +94,11 @@
         }
 
         function login(user, password) {
-            var storedPassword = '1234';
             var storedUser = 'root';
+            var storedPassword = '1234';
+            
 
-            return password == storedPassword | user == storedUser;
+            return password == storedPassword && user == storedUser;
         }
 
         function status() {
@@ -104,7 +107,7 @@
             document.getElementById("state").href="index.html";
           } else {
             console.log('You are not in :(');
-            alert("User or Pasword Incorrect !")
+            alert("Identifiant ou mot de passe incorrect !")
           }
         }
             
