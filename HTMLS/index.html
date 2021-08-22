@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
     
     <title>RCR - Form</title>
@@ -335,7 +336,7 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="C">NR</option>
+                                                <option value="">NR</option>
                                                 <option value="" disabled selected hidden></option>
                                             </select>
                                         </div>
@@ -349,15 +350,68 @@
                         <div class="card-body">
                             <div class="text-center">
                                 <img class="img-fluid px-3 px-sm-1 mt-2 mb-2" style="width: 39rem;"
-                                    src="img/airport_runway_2.png" alt="...">
+                                    src="img/airport_runway_09.png" alt="...">
                             </div>
                         </div>
                     </div>
                     <br>
                     <!-- RWYCC Card ....... -->
+                    
+                    <!-- Dropdown - Messages -->
+                            
+                    
                     <div class="card-body card border-left-primary shadow h-100 py-2">
                         <div class="bg-white card-header py-1">
-                            <h6 class="m-0 font-weight-bold text-primary">RWYCC :</h6>
+                        
+                           <!--  <button 
+                                type="button" 
+                                class="btn-info btn-circle btn-sm myPopover"
+                                data-toggle="popover"
+                                data-placement="right" title="Attribution d’un code d’état de la piste (RWYCC)"
+                                data-trigger="focus"
+                                data-content="
+                                6: - SÈCHE">
+                               !
+                            </button> -->
+
+                            <h6 class="m-0 font-weight-bold text-primary" title="">
+                                <a href="#"
+                                class="myPopover"
+                                data-toggle="popover"
+                                data-placement="right" title=""
+                                data-trigger="hover"
+                                data-html="true"
+                                data-popover-content="#myPopoverContent">RWYCC* :
+                            </a>
+                            <!-- Content for Popover: -->
+                            <div id="myPopoverContent" style="display:none">
+                                <strong>Attribution de RWYCC</strong>
+                                <ol style="padding:10px" start="0">
+                                   <li>*GLACE MOUILLÉE<br>*EAU SUR NEIGE COMPACTÉE<br>*NEIGE SÈCHE OU NEIGE MOUILLÉE SUR GLACE</li>
+                                   <li>*GLACE</li>
+                                   <li>*EAU STAGNANTE (plus de 3 mm d’épaisseur)<br>*NEIGE FONDANTE (plus de 3 mm d’épaisseur)</li>
+                                   <li>*MOUILLÉE (piste “mouillée glissante”)<br>*NEIGE SÈCHE (plus de 3 mm d’épaisseur)<br>*NEIGE MOUILLÉE (plus de 3 mm d’épaisseur)<br>*NEIGE SÈCHE SUR NEIGE COMPACTÉE(toute épaisseur)<br>*NEIGE MOUILLÉE SUR NEIGE COMPACTÉE (toute épaisseur)<br>*NEIGE COMPACTÉE (température de l’air extérieur supérieure à –15 °C)</li>
+                                   <li>*NEIGE COMPACTÉE (température de l’air extérieur –15 °C et plus bas)</li>
+                                   <li>*GEL MOUILLÉE (surface de la piste couverte de toute humidité ou eau visible jusqu’à et y compris 3 mm d’épaisseur)<br>*NEIGE FONDANTE (jusqu’à et y compris 3 mm d’épaisseur)<br>*NEIGE SÈCHE (jusqu’à et y compris 3 mm d’épaisseur)<br>*NEIGE MOUILLÉE (jusqu’à et y compris 3 mm d’épaisseur)</li>
+                                   <li>*SÈCHE</li>
+                                </ol>
+                            </div>
+                            </h6>                            
+                        
+                            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+                            <script>
+                                 $('.myPopover').popover({
+                                 html : true,
+                                 content: function() {
+                                  var elementId = $(this).attr("data-popover-content");
+                                  return $(elementId).html();
+                                 }
+                                 });
+                            </script>
+                            
                         </div>
                         <form>
                             <div class="row  no-gutters align-items-center mb-2">
@@ -836,6 +890,7 @@
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
