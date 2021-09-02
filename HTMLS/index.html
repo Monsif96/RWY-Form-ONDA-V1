@@ -416,6 +416,9 @@
                         <form>
                             <div class="row  no-gutters align-items-center mb-2">
                             <div class="col mr-2">
+                                <style>
+                                    option { font-size: 13px;}
+                                </style>
                                 <select class="form-control" id="RWYCC1" onchange ="Pickup()" required>
                                     <optgroup label="RWYCC 6 :">
                                         <option value="6">SÈCHE</option>
@@ -453,26 +456,82 @@
                                 </select>
                             </div>
                             <div class="col mr-2">
-                                <select class="form-control" id="RWYCC2" onchange ="Pickup()" required="true">
-                                    <option value="6">6</option>
-                                    <option value="5">5</option>
-                                    <option value="4">4</option>
-                                    <option value="3">3</option>
-                                    <option value="2">2</option>
-                                    <option value="1">1</option>
-                                    <option value="0">0</option>
+                                <style>
+                                    option { font-size: 13px;}
+                                </style>
+                                <select class="form-control" id="RWYCC2" onchange ="Pickup()" required>
+                                    <optgroup label="RWYCC 6 :">
+                                        <option value="6">SÈCHE</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 5 :">
+                                        <option value="5">GEL MOUILLÉE (surface de la piste couverte de toute humidité ou eau visible jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                        <option value="5">NEIGE FONDANTE (jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                        <option value="5">NEIGE SÈCHE (jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                        <option value="5">NEIGE MOUILLÉE (jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 4 :">
+                                        <option value="4">NEIGE COMPACTÉE (température de l’air extérieur –15 °C et plus bas)</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 3 :">
+                                        <option value="3">MOUILLÉE (piste “mouillée glissante”)</option>
+                                        <option value="3">NEIGE SÈCHE (plus de 3 mm d’épaisseur)</option>
+                                        <option value="3">NEIGE MOUILLÉE (plus de 3 mm d’épaisseur)</option>
+                                        <option value="3">NEIGE SÈCHE SUR NEIGE COMPACTÉE (toute épaisseur)</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 2 :">
+                                        <option value="2">EAU STAGNANTE (plus de 3 mm d’épaisseur)</option>
+                                        <option value="2">NNEIGE FONDANTE (plus de 3 mm d’épaisseur)</option>
+                                    </optgroup> 
+                                    <optgroup label="RWYCC 1 :">
+                                        <option value="1">GLACE</option>                                        
+                                    </optgroup> 
+                                    <optgroup label="RWYCC 0 :">
+                                        <option value="0">GLACE MOUILLÉE</option>
+                                        <option value="0">EAU SUR NEIGE COMPACTÉE</option>
+                                        <option value="0">NEIGE SÈCHE OU NEIGE MOUILLÉE SUR GLACE</option>
+                                    </optgroup>                                     
+
+
                                     <option value="" disabled selected hidden>RWYCC du 2° tiers</option>
                                 </select>
                             </div>
                             <div class="col mr-2">
-                                <select class="form-control" id="RWYCC3" onchange ="Pickup()" required="true">
-                                    <option value="6">6</option>
-                                    <option value="5">5</option>
-                                    <option value="4">4</option>
-                                    <option value="3">3</option>
-                                    <option value="2">2</option>
-                                    <option value="1">1</option>
-                                    <option value="0">0</option>
+                                <select class="form-control" id="RWYCC3" onchange ="Pickup()" required>
+                                    <style>
+                                        option { font-size: 13px;}
+                                    </style>
+                                    <optgroup label="RWYCC 6 :">
+                                        <option value="6">SÈCHE</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 5 :">
+                                        <option value="5">GEL MOUILLÉE (surface de la piste couverte de toute humidité ou eau visible jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                        <option value="5">NEIGE FONDANTE (jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                        <option value="5">NEIGE SÈCHE (jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                        <option value="5">NEIGE MOUILLÉE (jusqu’à et y compris 3 mm d’épaisseur)</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 4 :">
+                                        <option value="4">NEIGE COMPACTÉE (température de l’air extérieur –15 °C et plus bas)</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 3 :">
+                                        <option value="3">MOUILLÉE (piste “mouillée glissante”)</option>
+                                        <option value="3">NEIGE SÈCHE (plus de 3 mm d’épaisseur)</option>
+                                        <option value="3">NEIGE MOUILLÉE (plus de 3 mm d’épaisseur)</option>
+                                        <option value="3">NEIGE SÈCHE SUR NEIGE COMPACTÉE (toute épaisseur)</option>
+                                    </optgroup>
+                                    <optgroup label="RWYCC 2 :">
+                                        <option value="2">EAU STAGNANTE (plus de 3 mm d’épaisseur)</option>
+                                        <option value="2">NNEIGE FONDANTE (plus de 3 mm d’épaisseur)</option>
+                                    </optgroup> 
+                                    <optgroup label="RWYCC 1 :">
+                                        <option value="1">GLACE</option>                                        
+                                    </optgroup> 
+                                    <optgroup label="RWYCC 0 :">
+                                        <option value="0">GLACE MOUILLÉE</option>
+                                        <option value="0">EAU SUR NEIGE COMPACTÉE</option>
+                                        <option value="0">NEIGE SÈCHE OU NEIGE MOUILLÉE SUR GLACE</option>
+                                    </optgroup>                                     
+
+
                                     <option value="" disabled selected hidden>RWYCC du 3° tiers</option>
                                 </select>
                             </div>
@@ -645,7 +704,8 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="" disabled selected hidden>NR</option>
+                                                <option value="">NR</option>
+                                                <option value="" disabled selected hidden></option>
                                             </select>
                                         </div>
                                     </div>
@@ -686,7 +746,8 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="" disabled selected hidden>NR</option>
+                                                <option value="">NR</option>
+                                                <option value="" disabled selected hidden></option>
                                             </select>
                                         </div>
                                     </div>
@@ -707,7 +768,8 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="" disabled selected hidden>NR</option>
+                                                <option value="">NR</option>
+                                                <option value="" disabled selected hidden></option>
                                             </select>
                                         </div>
                                     </div>
@@ -731,7 +793,8 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="" disabled selected hidden>NR</option>
+                                                <option value="">NR</option>
+                                                <option value="" disabled selected hidden></option>
                                             </select>
                                         </div>
                                         <div class="col mr-2">
@@ -742,7 +805,8 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="" disabled selected hidden>NR</option>
+                                                <option value="">NR</option>
+                                                <option value="" disabled selected hidden></option>
                                             </select>
                                         </div>
                                     </div>
@@ -766,7 +830,8 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="" disabled selected hidden>NR</option>
+                                                <option value="">NR</option>
+                                                <option value="" disabled selected hidden></option>
                                             </select>
                                         </div>
                                     </div>
@@ -790,7 +855,8 @@
                                                 <option value="L">L</option>
                                                 <option value="R">R</option>
                                                 <option value="C">C</option>
-                                                <option value="" disabled selected hidden>NR</option> 
+                                                <option value="">NR</option>
+                                                <option value="" disabled selected hidden></option> 
                                             </select>
                                         </div>
                                     </div>
